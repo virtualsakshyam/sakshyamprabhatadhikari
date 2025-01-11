@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">Hi, I'm <span>Your Name</span></h1>
+      <p class="hero-subtitle">A <span>Web Developer</span> passionate about building beautiful and functional websites.</p>
+      <a href="#projects" class="cta">View My Work</a>
+    </div>
+  </header>
 
-    <section class="hero">
-        <h2>Welcome to My World</h2>
-        <p>Discover my projects, skills, and journey.</p>
-        <button onclick="alert('Let’s get started!')">Get Started</button>
-    </section>
-
-    <section id="about" class="section">
-        <h3>About Me</h3>
-        <p>
-            Hi! I'm [Your Name], a [Your Profession/Passion]. I love creating beautiful and functional websites, applications, and designs. 
-            My work combines technology and creativity to deliver impactful solutions.
-        </p>
-    </section>
-
-    <section id="projects" class="section">
-        <h3>My Projects</h3>
-        <div class="projects">
-            <div class="project-card">
-                <img src="https://source.unsplash.com/300x200/?technology,code" alt="Project 1">
-                <h4>Project 1</h4>
-                <p>A brief description of your project goes here.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://source.unsplash.com/300x200/?design,art" alt="Project 2">
-                <h4>Project 2</h4>
-                <p>A brief description of your project goes here.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://source.unsplash.com/300x200/?development,programming" alt="Project 3">
-                <h4>Project 3</h4>
-                <p>A brief description of your project goes here.</p>
-            </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a dedicated web developer with experience in creating sleek and intuitive designs. My goal is to turn ideas into reality through clean, efficient code and cutting-edge technologies.
+      </p>
+      <div class="about-grid">
+        <img src="profile.jpg" alt="Your Picture" class="profile-picture">
+        <div class="about-details">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Vue, Angular</li>
+            <li>Node.js, Express</li>
+            <li>Python, Django</li>
+          </ul>
+          <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-        <h3>Contact Me</h3>
-        <form class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Project Title</h3>
+          <p>A brief description of the project.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project Title</h3>
+          <p>A brief description of the project.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Project Title</h3>
+          <p>A brief description of the project.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved. <a href="#hero">Back to top</a></p>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you! Whether it's a project, job opportunity, or just a chat.</p>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

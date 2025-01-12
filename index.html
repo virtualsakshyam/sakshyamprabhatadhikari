@@ -9,14 +9,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
   <header class="hero">
     <div class="container">
       <h1 class="hero-title">Hi, I'm <span>Your Name</span></h1>
-      <p class="hero-subtitle">Crafting <span>modern websites</span> with <span>passion</span> and <span>precision</span>.</p>
-      <a href="#projects" class="cta">View My Work</a>
+      <p class="hero-subtitle">Creating <span>immersive experiences</span> through <span>cutting-edge designs</span>.</p>
+      <a href="#projects" class="cta">Explore My Work</a>
     </div>
-    <div class="scroll-indicator">Scroll Down</div>
+    <div class="scroll-indicator">⬇ Scroll Down ⬇</div>
   </header>
 
   <!-- About Section -->
@@ -25,17 +37,17 @@
       <h2>About Me</h2>
       <div class="about-content">
         <p>
-          I’m a passionate web developer with a knack for creating sleek, user-friendly designs. My work revolves around bringing ideas to life using the latest technologies and best practices.
+          I'm a passionate developer specializing in modern web technologies, crafting pixel-perfect designs, and delivering top-tier solutions for my clients.
         </p>
         <div class="about-grid">
           <img src="profile.jpg" alt="Your Picture" class="profile-picture">
           <div class="about-details">
-            <h3>Skills</h3>
+            <h3>Skills & Expertise</h3>
             <ul>
               <li>HTML, CSS, JavaScript</li>
               <li>React, Vue.js, Angular</li>
-              <li>Node.js, Express, Python</li>
-              <li>Responsive Design, UI/UX</li>
+              <li>Node.js, Express, MongoDB</li>
+              <li>UI/UX Design, Figma</li>
             </ul>
             <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
           </div>
@@ -47,30 +59,27 @@
   <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container">
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
       <div class="project-grid">
-        <div class="project-card">
+        <div class="project-card" data-hover="View Project">
           <img src="project1.jpg" alt="Project 1">
-          <div class="project-content">
+          <div class="project-overlay">
             <h3>Portfolio Website</h3>
-            <p>A sleek, modern portfolio design showcasing creativity and technical skills.</p>
-            <a href="#" class="btn">View Project</a>
+            <p>A modern and fully responsive portfolio showcasing creativity and functionality.</p>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-hover="View Project">
           <img src="project2.jpg" alt="Project 2">
-          <div class="project-content">
+          <div class="project-overlay">
             <h3>E-commerce Platform</h3>
-            <p>An intuitive e-commerce platform with advanced features like cart and payments.</p>
-            <a href="#" class="btn">View Project</a>
+            <p>An interactive platform with features like payment integration and inventory management.</p>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-hover="View Project">
           <img src="project3.jpg" alt="Project 3">
-          <div class="project-content">
+          <div class="project-overlay">
             <h3>Blog Platform</h3>
-            <p>A responsive blogging platform with content management features.</p>
-            <a href="#" class="btn">View Project</a>
+            <p>A responsive blog with dynamic post management and rich text editing.</p>
           </div>
         </div>
       </div>
@@ -80,7 +89,7 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2>Get In Touch</h2>
+      <h2>Contact Me</h2>
       <form action="#">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>

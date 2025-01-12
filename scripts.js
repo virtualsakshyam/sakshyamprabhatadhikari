@@ -1,22 +1,16 @@
-// Smooth scrolling for anchor links
+// Smooth Scrolling
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', function (e) {
+  link.addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
-// Project card hover animation
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('mouseover', () => {
-    card.setAttribute('data-hover', 'View Project');
-  });
-});
+// Toggle Mobile Menu
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-// Form submission alert
-document.querySelector('form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Thank you for reaching out! I will respond soon.');
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });

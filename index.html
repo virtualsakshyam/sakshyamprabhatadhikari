@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Advanced Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -12,45 +11,51 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
-      <h1 class="logo">My Portfolio</h1>
+      <h1 class="logo"><a href="#">My Portfolio</a></h1>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <header class="hero">
-    <div class="container">
-      <h1 class="hero-title">Hi, I'm <span>Your Name</span></h1>
-      <p class="hero-subtitle">Creating <span>immersive experiences</span> through <span>cutting-edge designs</span>.</p>
-      <a href="#projects" class="cta">Explore My Work</a>
+    <div class="hero-content container">
+      <h1>Welcome to <span>Your Name</span>'s World</h1>
+      <p class="hero-subtitle">Creating <span>innovative</span>, <span>beautiful</span>, and <span>functional</span> web experiences.</p>
+      <a href="#projects" class="cta-btn">Discover My Work</a>
     </div>
-    <div class="scroll-indicator">⬇ Scroll Down ⬇</div>
+    <div class="hero-image">
+      <img src="hero-image.png" alt="Hero Illustration">
+    </div>
+    <div class="scroll-down">⬇ Scroll Down ⬇</div>
   </header>
 
   <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <div class="about-content">
-        <p>
-          I'm a passionate developer specializing in modern web technologies, crafting pixel-perfect designs, and delivering top-tier solutions for my clients.
-        </p>
-        <div class="about-grid">
-          <img src="profile.jpg" alt="Your Picture" class="profile-picture">
-          <div class="about-details">
-            <h3>Skills & Expertise</h3>
-            <ul>
-              <li>HTML, CSS, JavaScript</li>
-              <li>React, Vue.js, Angular</li>
-              <li>Node.js, Express, MongoDB</li>
-              <li>UI/UX Design, Figma</li>
-            </ul>
-            <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
-          </div>
+      <p>
+        I'm a passionate web developer specializing in creating unique, dynamic, and user-centric web applications. 
+        I combine creativity with technical skills to craft innovative solutions.
+      </p>
+      <div class="about-grid">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <div class="about-details">
+          <h3>My Skills</h3>
+          <ul>
+            <li>Frontend: HTML, CSS, JavaScript, React</li>
+            <li>Backend: Node.js, Express, MongoDB</li>
+            <li>Design: Figma, Adobe XD</li>
+          </ul>
+          <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
         </div>
       </div>
     </div>
@@ -59,27 +64,35 @@
   <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>My Projects</h2>
       <div class="project-grid">
-        <div class="project-card" data-hover="View Project">
+        <!-- Project Card 1 -->
+        <div class="project-card">
           <img src="project1.jpg" alt="Project 1">
-          <div class="project-overlay">
+          <div class="card-overlay">
             <h3>Portfolio Website</h3>
-            <p>A modern and fully responsive portfolio showcasing creativity and functionality.</p>
+            <p>Fully responsive and beautifully designed personal portfolio.</p>
+            <a href="#" class="btn">View Project</a>
           </div>
         </div>
-        <div class="project-card" data-hover="View Project">
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
           <img src="project2.jpg" alt="Project 2">
-          <div class="project-overlay">
-            <h3>E-commerce Platform</h3>
-            <p>An interactive platform with features like payment integration and inventory management.</p>
+          <div class="card-overlay">
+            <h3>E-Commerce Platform</h3>
+            <p>An interactive shopping experience with payment integration.</p>
+            <a href="#" class="btn">View Project</a>
           </div>
         </div>
-        <div class="project-card" data-hover="View Project">
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
           <img src="project3.jpg" alt="Project 3">
-          <div class="project-overlay">
+          <div class="card-overlay">
             <h3>Blog Platform</h3>
-            <p>A responsive blog with dynamic post management and rich text editing.</p>
+            <p>A blog with dynamic post management and user authentication.</p>
+            <a href="#" class="btn">View Project</a>
           </div>
         </div>
       </div>
@@ -90,6 +103,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
+      <p>Got an idea or project? Let's work together!</p>
       <form action="#">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
@@ -103,7 +117,7 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Your Name. All rights reserved.</p>
-      <div class="social-links">
+      <div class="social-icons">
         <a href="#" target="_blank">LinkedIn</a>
         <a href="#" target="_blank">GitHub</a>
         <a href="#" target="_blank">Twitter</a>

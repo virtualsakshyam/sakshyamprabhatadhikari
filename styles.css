@@ -31,7 +31,7 @@ ul {
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 .hero-title span {
@@ -39,7 +39,7 @@ ul {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 24px;
   margin: 10px 0;
 }
 
@@ -149,7 +149,7 @@ ul {
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 16px;
   cursor: pointer;
 }
 

@@ -117,6 +117,7 @@ ul {
   text-align: center;
   transition: transform 0.3s ease;
   margin-top: 50px;
+  width: 300px;
 }
 
 .project-card:hover {
